@@ -7,6 +7,9 @@
     --body-color:  #1e1e2a;
     --container-color:   #2d2e37;
     --text-color:   #fcfeff;
+
+    --min-width: 240px;
+    --max-width: 1600px;
 }
 
 /* Typography */
@@ -61,5 +64,8 @@ body{
     color: var(--text-color);
 }
 
-
+.container{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+}
 
