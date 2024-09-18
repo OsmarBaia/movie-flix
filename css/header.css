@@ -1,0 +1,111 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar__logo{
+    color: var(--text-color);
+}
+
+.navbar__logo span{
+    color: var(--main-color);
+}
+
+.navbar{
+    width: 100%;
+    min-width: 240px;
+    max-width: 1600px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.navbar > div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* Search Box */
+.navbar__search-box{
+    position: relative;
+}
+
+label[for="search-box__input"] {
+    display: none;
+}
+
+#search-box__input{
+    width: 230px;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    color: var(--text-color);
+
+    background-color: var(--container-color);
+}
+
+#search-box__input:focus{
+    outline: var(--hover-color);
+}
+
+.navbar__search-box button{
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border: none;
+    background-color: var(--container-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    font-size: large;
+
+    position: absolute;
+    right: .5rem;
+    top: .25rem;
+}
+
+.navbar__search-box button:hover{
+    background-color: var(--hover-color);
+}
+
+.navbar__search-box button:active{
+    opacity: 0.7;
+}
+
+/*
+
+ Side Menu Button
+
+ */
+.toggle-nav{
+    color: var(--text-color);
+    background-color: var(--container-color);
+    border: none;
+
+    font-size: large;
+    padding: .25rem .25rem .1rem .25rem;
+    border-radius: .5rem;
+}
+
+.toggle-nav:hover{
+    background-color: var(--main-color);
+}
+
+.toggle-nav:active{
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 600px){
+    .toggle-nav{
+        display: none;
+    }
+}
