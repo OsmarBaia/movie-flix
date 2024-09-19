@@ -25,6 +25,7 @@
 <body>
 <!--    Header  -->
 <header>
+<!--    TODO: add classes nav-open nav-close, to toggle nav-menu -->
 <!--    Navbar     -->
     <div class="navbar container">
         <!--    Logo        -->
@@ -36,18 +37,20 @@
             <div class="navbar__search-box">
                 <form action="">
                     <label for="search-box__input">Movie Name: </label>
-                    <input type="search" name="" id="search-box__input" placeholder="Search movie name..." class="poppins-regular">
+                    <input type="search" name="" id="search-box__input" placeholder="Search movie name..." class="poppins-medium nav-close">
                     <button type="submit" aria-label="search it">
                         <i class="bx bx-search"></i>
                     </button>
                 </form>
             </div>
-            <button class="toggle-nav poppins-bold" aria-label="toggle navigation menu">
+            <button class="nav-toggle poppins-bold" aria-label="toggle navigation menu">
                 <i class='bx bx-menu'></i>
             </button>
         </div>
+
         <!--        Navigation Menu     -->
         <nav>
+
             <ul class="nav-list">
                 <li class="nav-list__item ">
                     <a href="index.html" role="button" aria-label="go to home page">
@@ -71,8 +74,10 @@
         </nav>
     </div>
 </header>
-<main>
-    <div class="toggle-nav bg-blur"></div>
+<main style="width: 100%; height: 100%; position: relative; padding: 0 0 0 110px">
+
+    <h2>whatever</h2>
+    <div class="nav-close bg-blur"></div>
 </main>
 </body>
 </html>
