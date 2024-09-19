@@ -8,6 +8,8 @@ nav{
     padding: 1rem;
 
     background-color: var(--body-color);
+
+    z-index: 9;
 }
 
 .nav-list {

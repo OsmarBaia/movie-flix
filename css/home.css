@@ -1,0 +1,8 @@
+@import url(./carousel.css);
+
+.hero{
+    width: 100%;
+    height: auto;
+    min-height: 25vh;
+    max-height: 50vh;
+}
