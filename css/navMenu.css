@@ -6,6 +6,8 @@ nav{
     left: 0;
 
     padding: 1rem;
+
+    background-color: var(--body-color);
 }
 
 .nav-list {
@@ -68,11 +70,6 @@ nav{
     z-index: 10;
 }
 
-.bg-blur.active {
-    display: block;
-}
-
-
 @media screen and (min-width: 600px){
     nav{
         display: none;
@@ -89,7 +86,7 @@ nav{
 
         position: absolute;
         left: 0;
-        top: 50%;
+        top: calc(50% + 2.5rem);
     }
 
     .nav-list {
@@ -105,4 +102,9 @@ nav{
         border:none;
         border-right: 2px solid var(--main-color);
     }
+
+    .bg-blur.active {
+        display: block;
+    }
+
 }
