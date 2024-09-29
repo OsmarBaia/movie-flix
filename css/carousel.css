@@ -2,6 +2,8 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+
+    border-radius: .5rem;
 }
 
 .carousel__images {
@@ -50,4 +52,18 @@
 
 .carousel__buttons i {
     font-size: xx-large;
+}
+
+.carousel__content{
+    padding: 1rem;
+    background-color: var(--container-color);
+    /*border-bottom-left-radius: .5rem;*/
+    /*border-bottom-right-radius: .5rem;*/
+}
+
+@media (max-width: 576px) {
+    .carousel__images img {
+        max-width: 100%;
+        height: auto;
+    }
 }
